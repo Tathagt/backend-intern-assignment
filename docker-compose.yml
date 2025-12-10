@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: org_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: master_db
+
+  api:
+    build: .
+    container_name: org_api
+    ports:
+      - "8000:8000"
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017
+      DATABASE_NAME: master_db
+      SECRET_KEY: your-secret-key-change-in-production
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/app
+
+volumes:
+  mongodb_data:
