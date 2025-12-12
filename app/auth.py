@@ -11,21 +11,17 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 security = HTTPBearer()
 
 class AuthHandler:
-    """Authentication handler class"""
     
     @staticmethod
     def get_password_hash(password: str) -> str:
-        """Hash a password"""
         return pwd_context.hash(password)
     
     @staticmethod
     def verify_password(plain_password: str, hashed_password: str) -> bool:
-        """Verify a password against hash"""
         return pwd_context.verify(plain_password, hashed_password)
     
     @staticmethod
     def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:
-        """Create JWT access token"""
         to_encode = data.copy()
         if expires_delta:
             expire = datetime.utcnow() + expires_delta
@@ -38,7 +34,6 @@ class AuthHandler:
     
     @staticmethod
     def decode_token(token: str) -> TokenData:
-        """Decode and verify JWT token"""
         try:
             payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
             email: str = payload.get("sub")
@@ -58,7 +53,6 @@ class AuthHandler:
             )
 
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)) -> TokenData:
-    """Get current authenticated user"""
     token = credentials.credentials
     return AuthHandler.decode_token(token)
 
